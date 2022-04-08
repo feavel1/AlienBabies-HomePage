@@ -1,0 +1,35 @@
+.buttonPink {
+  cursor: pointer;
+  outline: none;
+  padding: 0.75rem 1.25rem;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-family: inherit;
+  background: #f8b7ca;
+  color: #0a0a0a;
+  border: 1px solid transparent;
+  -webkit-transition: 0.3s ease all;
+  transition: 0.3s ease all;
+}
+
+.buttonPink:hover {
+  border-color: #f8b7ca;
+  background: rgba(248, 183, 202, 0.1);
+  color: #f8b7ca;
+}
+
+.buttonPink:active {
+  border-color: #f8b7ca;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(rgba(248, 183, 202, 0.2)),
+    to(rgba(248, 183, 202, 0.3))
+  );
+  background: linear-gradient(
+    rgba(248, 183, 202, 0.2),
+    rgba(248, 183, 202, 0.3)
+  );
+  color: #f8b7ca;
+}

@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { BiMenuAltRight } from "react-icons/bi";
 import { AiOutlineClose } from "react-icons/ai";
 import Link from "next/link";
-import Btn from "../Button/Btn";
+import Btn from "../Btn/Btn";
 import classes from "./Header.module.css";
 
 export default function Header() {
