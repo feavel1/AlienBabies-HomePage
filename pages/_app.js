@@ -1,7 +1,13 @@
-import '../styles/globals.css'
+import ThreeScene from "../components/three/ThreeScene";
+import "../styles/globals.css";
 
 function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+  return (
+    <>
+      <ThreeScene />
+      <Component {...pageProps} />
+    </>
+  );
 }
 
-export default MyApp
+export default MyApp;

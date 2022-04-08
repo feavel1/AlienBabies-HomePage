@@ -8,10 +8,10 @@ class ThreeScene extends Component {
   componentDidMount() {
     var container;
     var camera, scene, renderer;
-    let uniforms;
+    var uniforms;
 
-    let loader = new THREE.TextureLoader();
-    let texture;
+    const loader = new THREE.TextureLoader();
+    var texture;
     loader.setCrossOrigin("anonymous");
     loader.load(
       "https://s3-us-west-2.amazonaws.com/s.cdpn.io/982762/noise.png",
@@ -26,7 +26,7 @@ class ThreeScene extends Component {
     );
 
     function init() {
-      container = document.getElementById("container1");
+      container = document.getElementById("container");
 
       camera = new THREE.Camera();
       camera.position.z = 1;
@@ -84,11 +84,7 @@ class ThreeScene extends Component {
   }
 
   render() {
-    return (
-      <>
-        <div key={1} id="container1" className="container" />
-      </>
-    );
+    return <div id="container" className={classes.container} />;
   }
 }
 
