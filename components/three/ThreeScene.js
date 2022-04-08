@@ -1,11 +1,13 @@
 import { Component } from "react";
 import * as THREE from "three";
-import Script from "next/script";
+import classes from "./ThreeScene.module.css";
+import vertexShader from "./shaders/vertexShader.vert";
+import fragmentShader from "./shaders/fragmentShader.frag";
 
 class ThreeScene extends Component {
   componentDidMount() {
-    let container;
-    let camera, scene, renderer;
+    var container;
+    var camera, scene, renderer;
     let uniforms;
 
     let loader = new THREE.TextureLoader();
@@ -24,35 +26,29 @@ class ThreeScene extends Component {
     );
 
     function init() {
-      container = document.getElementById("container");
+      container = document.getElementById("container1");
 
       camera = new THREE.Camera();
       camera.position.z = 1;
-
       scene = new THREE.Scene();
-
       var geometry = new THREE.PlaneBufferGeometry(2, 2);
-
       uniforms = {
         u_time: { type: "f", value: 1.0 },
         u_resolution: { type: "v2", value: new THREE.Vector2() },
         u_noise: { type: "t", value: texture },
         u_mouse: { type: "v2", value: new THREE.Vector2() },
       };
-
       var material = new THREE.ShaderMaterial({
         uniforms: uniforms,
-        vertexShader: document.getElementById("vertexShader").textContent,
-        fragmentShader: document.getElementById("fragmentShader").textContent,
+        vertexShader: vertexShader,
+        fragmentShader: fragmentShader,
       });
-
       material.extensions.derivatives = true;
-
       var mesh = new THREE.Mesh(geometry, material);
       scene.add(mesh);
 
       renderer = new THREE.WebGLRenderer();
-      renderer.setPixelRatio(window.devicePixelRatio);
+      renderer.setPixelRatio(window.devicePixelRatio / 5);
 
       container.appendChild(renderer.domElement);
 
@@ -70,7 +66,7 @@ class ThreeScene extends Component {
       });
     }
 
-    function onWindowResize(event) {
+    function onWindowResize(_event) {
       renderer.setSize(window.innerWidth, window.innerHeight);
       uniforms.u_resolution.value.x = renderer.domElement.width;
       uniforms.u_resolution.value.y = renderer.domElement.height;
@@ -78,59 +74,22 @@ class ThreeScene extends Component {
 
     function animate(delta) {
       requestAnimationFrame(animate);
-      render(delta);
+      renderDataHere(delta);
     }
 
-    // let capturer = new CCapture({
-    //   verbose: true,
-    //   framerate: 60,
-    //   // motionBlurFrames: 4,
-    //   quality: 90,
-    //   format: "webm",
-    //   workersPath: "js/",
-    // });
-
-    // let capturing = false;
-
-    // isCapturing = function (val) {
-    //   if (val === false && window.capturing === true) {
-    //     capturer.stop();
-    //     capturer.save();
-    //   } else if (val === true && window.capturing === false) {
-    //     capturer.start();
-    //   }
-    //   capturing = val;
-    // };
-    // toggleCapture = function () {
-    //   isCapturing(!capturing);
-    // };
-
-    window.addEventListener("keyup", function (e) {
-      if (e.keyCode == 68) toggleCapture();
-    });
-
-    let then = 0;
-    function render(delta) {
+    function renderDataHere(delta) {
       uniforms.u_time.value = delta * 0.0005;
       renderer.render(scene, camera);
-
-      // if (capturing) {
-      //   capturer.capture(renderer.domElement);
-      // }
     }
   }
 
   render() {
     return (
       <>
-        <div id="container" />
-        <Script
-          src="./vertexShader.js"
-          id="vertexShader"
-          type="x-shader/x-vertex"
-        />
+        <div key={1} id="container1" className="container" />
       </>
     );
   }
 }
+
 export default ThreeScene;
