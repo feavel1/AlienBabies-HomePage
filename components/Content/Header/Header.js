@@ -4,6 +4,7 @@ import { AiOutlineClose } from "react-icons/ai";
 import Link from "next/link";
 import Btn from "../Btn/Btn";
 import classes from "./Header.module.css";
+// import DarkModeSwitch from "../theme/DarkModeSwitch";
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -37,43 +38,56 @@ export default function Header() {
   }
 
   return (
-    <header className={classes.header}>
-      <div className={classes.header__content}>
-        <Link href="/" scroll={false}>
-          <a className={classes.header__content__logo}>外星宝贝</a>
-        </Link>
-        <nav
-          className={`${classes.header__content__nav} ${
-            menuOpen && size.width < 768 ? classes.isMenu : ""
-          }`}
-        >
-          <ul>
-            <li>
-              <Link href="/Works" onClick={menuToggleHandler}>
-                作品
-              </Link>
-            </li>
-            <li>
-              <Link href="/Game" onClick={menuToggleHandler}>
-                学习
-              </Link>
-            </li>
-            <li>
-              <Link href="/Works/Album" onClick={menuToggleHandler}>
-                相册
-              </Link>
-            </li>
-          </ul>
-          <Btn to="/Contact">联系</Btn>
-        </nav>
-        <div className={classes.header__content__toggle}>
-          {!menuOpen ? (
-            <BiMenuAltRight onClick={menuToggleHandler} />
-          ) : (
-            <AiOutlineClose onClick={menuToggleHandler} />
-          )}
+    <>
+      <header className={classes.header}>
+        <div className={classes.header__content}>
+          <Link href="/" scroll={false}>
+            <a className={classes.header__content__logo}>外星宝贝</a>
+          </Link>
+
+          <nav
+            className={`${classes.header__content__nav} ${
+              menuOpen && size.width < 768 ? classes.isMenu : ""
+            }`}
+          >
+            <ul>
+              <li>
+                <Link href="/Works" onClick={menuToggleHandler}>
+                  作品
+                </Link>
+              </li>
+              <li>
+                <Link href="/Game" onClick={menuToggleHandler}>
+                  学习
+                </Link>
+              </li>
+              <li>
+                <Link href="/Works/Album" onClick={menuToggleHandler}>
+                  相册
+                </Link>
+              </li>
+
+              <li>
+                <Link href="/Works/Album" onClick={menuToggleHandler}>
+                  联系
+                </Link>
+              </li>
+              {/* <li>
+              <DarkModeSwitch />
+            </li> */}
+            </ul>
+          </nav>
+
+          <div className={classes.header__content__toggle}>
+            {!menuOpen ? (
+              <BiMenuAltRight onClick={menuToggleHandler} />
+            ) : (
+              <AiOutlineClose onClick={menuToggleHandler} />
+            )}
+          </div>
         </div>
-      </div>
-    </header>
+      </header>
+      <div className={classes.blank} />
+    </>
   );
 }
