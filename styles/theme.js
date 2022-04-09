@@ -17,8 +17,25 @@ const breakpoints = createBreakpoints({
   lg: "62em",
 });
 
+const components = {
+  Heading: {
+    variants: {
+      "section-title": {
+        textDecoration: "underline",
+        fontSize: 20,
+        textUnderlineOffset: 6,
+        textDecorationColor: "#521B41",
+        textDecorationThickness: 4,
+        marginTop: 3,
+        marginBottom: 4,
+      },
+    },
+  },
+};
+
 const overrides = {
   ...chakraTheme,
+  components,
   styles: {
     global: (props) => ({
       body: {

@@ -1,16 +1,20 @@
 import { ChakraProvider, ColorModeProvider } from "@chakra-ui/react";
 import { AnimatePresence } from "framer-motion";
 import customTheme from "../styles/theme";
+import Header from "../components/Content/Header/Header";
+import ThreeScene from "../components/three/ThreeScene";
 
 function MyApp({ Component, pageProps, router }) {
   return (
     <ChakraProvider resetCSS theme={customTheme}>
       <ColorModeProvider
         options={{
-          initialColorMode: "light",
+          initialColorMode: "dark",
           useSystemColorMode: true,
         }}
       />
+      <Header />
+      <ThreeScene />
       <AnimatePresence
         exitBeforeEnter
         initial={true}

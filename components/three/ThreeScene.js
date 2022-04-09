@@ -26,7 +26,7 @@ class ThreeScene extends Component {
     );
 
     function init() {
-      container = document.getElementById("container");
+      container = document.getElementById("container1");
 
       camera = new THREE.Camera();
       camera.position.z = 1;
@@ -48,7 +48,7 @@ class ThreeScene extends Component {
       scene.add(mesh);
 
       renderer = new THREE.WebGLRenderer();
-      renderer.setPixelRatio(window.devicePixelRatio / 3);
+      renderer.setPixelRatio(window.devicePixelRatio / 6);
 
       container.appendChild(renderer.domElement);
 
@@ -84,7 +84,7 @@ class ThreeScene extends Component {
   }
 
   render() {
-    return <div id="container" className={classes.container} />;
+    return <div id="container1" className={classes.container} />;
   }
 }
 
