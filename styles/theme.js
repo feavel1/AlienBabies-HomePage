@@ -1,6 +1,6 @@
-import { theme as chakraTheme } from "@chakra-ui/react";
+import { theme as chakraTheme, useColorModeValue } from "@chakra-ui/react";
 import { extendTheme } from "@chakra-ui/react";
-import { createBreakpoints } from "@chakra-ui/theme-tools";
+import { createBreakpoints, mode } from "@chakra-ui/theme-tools";
 
 const fonts = {
   ...chakraTheme.fonts,
@@ -19,6 +19,14 @@ const breakpoints = createBreakpoints({
 
 const overrides = {
   ...chakraTheme,
+  styles: {
+    global: (props) => ({
+      body: {
+        bg: mode("purple.100", "purple.800")(props),
+        color: mode("black", "white")(props),
+      },
+    }),
+  },
   fonts,
   breakpoints,
   fontWeights: {
