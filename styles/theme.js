@@ -22,7 +22,7 @@ const overrides = {
   styles: {
     global: (props) => ({
       body: {
-        bg: mode("purple.100", "purple.800")(props),
+        bg: mode("WhiteAlpha100", "#521B41")(props),
         color: mode("black", "white")(props),
       },
     }),
