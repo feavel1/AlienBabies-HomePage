@@ -1,14 +1,17 @@
-import { Html, Head, Main, NextScript } from "next/document";
-import ThreeScene from "../components/three/ThreeScene";
+import NextDocument, { Html, Head, Main, NextScript } from "next/document";
+import { ColorModeScript } from "@chakra-ui/react";
 
-export default function Document(p) {
-  return (
-    <Html lang="en">
-      <Head />
-      <body>
-        <Main />
-        <NextScript />
-      </body>
-    </Html>
-  );
+export default class Document extends NextDocument {
+  render() {
+    return (
+      <Html lang="en">
+        <Head />
+        <body>
+          <ColorModeScript />
+          <Main />
+          <NextScript />
+        </body>
+      </Html>
+    );
+  }
 }

@@ -1,10 +1,9 @@
 import { useEffect, useState } from "react";
-import { BiMenuAltRight } from "react-icons/bi";
-import { AiOutlineClose } from "react-icons/ai";
+import { BiMenuAltRight, AiOutlineClose } from "react-icons/bi";
+
 import Link from "next/link";
-import Btn from "../Btn/Btn";
 import classes from "./Header.module.css";
-// import DarkModeSwitch from "../theme/DarkModeSwitch";
+import DarkModeSwitch from "../DarkModeSwitch/DarkModeSwitch";
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -72,9 +71,9 @@ export default function Header() {
                   联系
                 </Link>
               </li>
-              {/* <li>
-              <DarkModeSwitch />
-            </li> */}
+              <li>
+                <DarkModeSwitch />
+              </li>
             </ul>
           </nav>
 

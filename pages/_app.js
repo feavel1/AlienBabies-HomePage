@@ -1,13 +1,17 @@
-import Footer from "../components/Content/Footer/Footer";
-import Header from "../components/Content/Header/Header";
-import ThreeScene from "../components/three/ThreeScene";
-import "../styles/globals.css";
+import { ChakraProvider, ColorModeProvider } from "@chakra-ui/react";
+import customTheme from "../styles/theme";
 
 function MyApp({ Component, pageProps }) {
   return (
-    <>
+    <ChakraProvider resetCSS theme={customTheme}>
+      <ColorModeProvider
+        options={{
+          initialColorMode: "light",
+          useSystemColorMode: true,
+        }}
+      />
       <Component {...pageProps} />
-    </>
+    </ChakraProvider>
   );
 }
 
