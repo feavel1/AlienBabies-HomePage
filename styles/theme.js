@@ -31,6 +31,16 @@ const components = {
       },
     },
   },
+  Link: {
+    variants: {
+      passTo: {
+        color: "blue.500",
+        ":hover": {
+          color: "blue.600",
+        },
+      },
+    },
+  },
 };
 
 const overrides = {

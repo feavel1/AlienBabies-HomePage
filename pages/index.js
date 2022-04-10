@@ -1,9 +1,26 @@
 import Layout from "../components/Layout/Layout";
-import { Box, Image, Heading, Button } from "@chakra-ui/react";
+import {
+  Box,
+  Button,
+  Heading,
+  Image,
+  List,
+  ListItem,
+  SimpleGrid,
+} from "@chakra-ui/react";
+import {
+  IoLogoTwitter,
+  IoLogoInstagram,
+  IoLogoGithub,
+  IoLogoWechat,
+} from "react-icons/io5";
 import { motion } from "framer-motion";
 import Paragraph from "../components/Content/Paragraph/Paragraph";
 import Link from "next/link";
 import { BioSection, BioYear } from "../components/Content/Paragraph/bio";
+import { GridItem } from "../components/Content/Paragraph/GridItem";
+import thumbYouTube from "../public/images/albumPic10_helloKitty.jpg";
+import thumbInkdrop from "../public/images/albumPic10_helloKitty.jpg";
 
 export default function Home() {
   return (
@@ -52,8 +69,8 @@ export default function Home() {
         尊重他人 1.尊重他人是一个人内在修养的外在表现
         2.每个人都是有尊严的个体都希望得到他人的尊重
         3.要想自己被尊重，先尊重别人🫡 .{" "}
-        <Link href="/works/dark-birds-fly" scroll={false}>
-          <span style={{ color: "black" }}>查看原文</span>
+        <Link href="/works/dark-birds-fly" scroll={false} variant="text">
+          查看原文
         </Link>
       </Paragraph>
       <Box align="center" my={4}>
@@ -83,6 +100,77 @@ export default function Home() {
         <BioYear>2022 - </BioYear>
         开始我的化妆师生涯💋
       </BioSection>
+
+      <Heading as="h3" variant="section-title">
+        On the web
+      </Heading>
+      <List>
+        <ListItem>
+          <Link href="https://github.com/feavel1" target="_blank">
+            <Button
+              variant="ghost"
+              colorScheme="pink"
+              leftIcon={<IoLogoGithub />}
+            >
+              @feavel1
+            </Button>
+          </Link>
+        </ListItem>
+        <ListItem>
+          <Link href="https://twitter.com/FEAVEL18" target="_blank">
+            <Button
+              variant="ghost"
+              colorScheme="pink"
+              leftIcon={<IoLogoTwitter />}
+            >
+              @FEAVEL18
+            </Button>
+          </Link>
+        </ListItem>
+        <ListItem>
+          <Link href="https://www.instagram.com/babyfeavel/" target="_blank">
+            <Button
+              variant="ghost"
+              colorScheme="pink"
+              leftIcon={<IoLogoInstagram />}
+            >
+              @babyfeavel
+            </Button>
+          </Link>
+        </ListItem>
+        <ListItem>
+          <Button
+            variant="ghost"
+            colorScheme="pink"
+            leftIcon={<IoLogoWechat />}
+          >
+            tanuki20966
+          </Button>
+        </ListItem>
+      </List>
+
+      <SimpleGrid columns={[1, 2, 2]} gap={6}>
+        <GridItem
+          href="https://music.163.com/#/playlist?id=5085085377"
+          title="Listen To My Recent Music"
+          thumbnail={thumbYouTube}
+        >
+          My Net Ease Music
+        </GridItem>
+        <GridItem
+          href="https://www.instagram.com/iloveali3nbabies/"
+          title="My Cutest Girl-friend"
+          thumbnail={thumbInkdrop}
+        >
+          My daily life
+        </GridItem>
+      </SimpleGrid>
+
+      <Box align="center" my={4}>
+        <Link href="/posts" scroll={false}>
+          <Button colorScheme="pink">Popular posts</Button>
+        </Link>
+      </Box>
     </Layout>
   );
 }

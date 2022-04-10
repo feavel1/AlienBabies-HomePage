@@ -14,7 +14,7 @@ function MyApp({ Component, pageProps, router }) {
         }}
       />
       <Header />
-      <ThreeScene />
+      {/* <ThreeScene /> */}
       <AnimatePresence
         exitBeforeEnter
         initial={true}
