@@ -56,7 +56,7 @@ export default function Home() {
               transition={{ duration: 5 }}
             >
               <Image
-                src="/images/albumPic10_helloKitty.jpg"
+                src="/images/index/albumPic10_helloKitty.jpg"
                 alt="Profile image"
                 width="100%"
                 height="100%"

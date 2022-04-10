@@ -14,7 +14,7 @@ class ThreeScene extends Component {
     var texture;
     loader.setCrossOrigin("anonymous");
     loader.load(
-      "https://s3-us-west-2.amazonaws.com/s.cdpn.io/982762/noise.png",
+      "/images/three/noise.png",
       function do_something_with_texture(tex) {
         texture = tex;
         texture.wrapS = THREE.RepeatWrapping;
