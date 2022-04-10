@@ -163,17 +163,17 @@ export default function Home() {
       <SimpleGrid columns={[1, 2, 2]} gap={6} mt={3}>
         <GridItem
           href="https://music.163.com/#/playlist?id=5085085377"
-          title="Listen To My Recent Music"
+          title="我的作品"
           thumbnail={thumbYouTube}
         >
-          My Net Ease Music
+          Photo Album
         </GridItem>
         <GridItem
-          href="https://www.instagram.com/iloveali3nbabies/"
-          title="My Cutest Girl-friend"
+          href="https://feavel.com"
+          title="我最可爱的男朋友"
           thumbnail={thumbInkdrop}
         >
-          My daily life
+          feavel.com
         </GridItem>
       </SimpleGrid>
 
