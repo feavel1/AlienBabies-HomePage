@@ -4,23 +4,24 @@ import {
   Button,
   Heading,
   Image,
+  Link,
   List,
   ListItem,
   SimpleGrid,
 } from "@chakra-ui/react";
 import {
-  IoLogoTwitter,
+  IoLogoTiktok,
   IoLogoInstagram,
   IoLogoGithub,
   IoLogoWechat,
 } from "react-icons/io5";
 import { motion } from "framer-motion";
 import Paragraph from "../components/Content/Paragraph/Paragraph";
-import Link from "next/link";
+import NextLink from "next/link";
 import { BioSection, BioYear } from "../components/Content/Paragraph/bio";
 import { GridItem } from "../components/Content/Paragraph/GridItem";
-import thumbYouTube from "../public/images/albumPic10_helloKitty.jpg";
-import thumbInkdrop from "../public/images/albumPic10_helloKitty.jpg";
+import thumbInkdrop from "../public/images/index/albumPic2_helloKitty.jpg";
+import thumbYouTube from "../public/images/index/albumPic3_helloKitty.jpg";
 
 export default function Home() {
   return (
@@ -69,20 +70,22 @@ export default function Home() {
         尊重他人 1.尊重他人是一个人内在修养的外在表现
         2.每个人都是有尊严的个体都希望得到他人的尊重
         3.要想自己被尊重，先尊重别人🫡 .{" "}
-        <Link href="/works/dark-birds-fly" scroll={false} variant="text">
+        <NextLink href="/works/dark-birds-fly" scroll={false} variant="text">
           查看原文
-        </Link>
+        </NextLink>
       </Paragraph>
       <Box align="center" my={4}>
-        <Link href="/Works" scroll={false}>
-          <Button colorScheme="pink">My portfolio</Button>
-        </Link>
+        <NextLink href="/Works" scroll={false}>
+          <Button colorScheme="pink" variant="outline">
+            我的作品
+          </Button>
+        </NextLink>
       </Box>
       {/*  */}
       {/* 介绍 */}
       {/*  */}
       <Heading as="h3" variant="section-title">
-        Bio
+        介绍
       </Heading>
       <BioSection>
         <BioYear>2002</BioYear>
@@ -98,43 +101,38 @@ export default function Home() {
       </BioSection>
       <BioSection>
         <BioYear>2022 - </BioYear>
-        开始我的化妆师生涯💋
+        我的化妆师生涯💋
       </BioSection>
 
-      <Heading as="h3" variant="section-title">
-        On the web
+      <Heading as="h3" variant="section-title" mr={0}>
+        在网上找到我！
       </Heading>
       <List>
         <ListItem>
-          <Link href="https://github.com/feavel1" target="_blank">
+          <Link
+            href="https://www.douyin.com/user/MS4wLjABAAAABZed-RkD7nT5SHozVpyjQJmhZFNXQWWXrh6oTn_sX9E"
+            target="_blank"
+          >
             <Button
               variant="ghost"
               colorScheme="pink"
-              leftIcon={<IoLogoGithub />}
+              leftIcon={<IoLogoTiktok />}
             >
-              @feavel1
+              Ali3nbabies
             </Button>
           </Link>
         </ListItem>
         <ListItem>
-          <Link href="https://twitter.com/FEAVEL18" target="_blank">
-            <Button
-              variant="ghost"
-              colorScheme="pink"
-              leftIcon={<IoLogoTwitter />}
-            >
-              @FEAVEL18
-            </Button>
-          </Link>
-        </ListItem>
-        <ListItem>
-          <Link href="https://www.instagram.com/babyfeavel/" target="_blank">
+          <Link
+            href="https://www.instagram.com/iloveali3nbabies/"
+            target="_blank"
+          >
             <Button
               variant="ghost"
               colorScheme="pink"
               leftIcon={<IoLogoInstagram />}
             >
-              @babyfeavel
+              iloveali3nbabies
             </Button>
           </Link>
         </ListItem>
@@ -146,6 +144,17 @@ export default function Home() {
           >
             tanuki20966
           </Button>
+        </ListItem>
+        <ListItem>
+          <Link href="https://github.com/feavel1" target="_blank">
+            <Button
+              variant="ghost"
+              colorScheme="pink"
+              leftIcon={<IoLogoGithub />}
+            >
+              @feavel1
+            </Button>
+          </Link>
         </ListItem>
       </List>
 
@@ -167,9 +176,11 @@ export default function Home() {
       </SimpleGrid>
 
       <Box align="center" my={4}>
-        <Link href="/posts" scroll={false}>
-          <Button colorScheme="pink">Popular posts</Button>
-        </Link>
+        <NextLink href="/posts" scroll={false}>
+          <Button colorScheme="pink" variant="outline">
+            火爆视频
+          </Button>
+        </NextLink>
       </Box>
     </Layout>
   );
