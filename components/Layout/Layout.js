@@ -32,7 +32,7 @@ function Layout(p) {
         animate="enter"
         exit="exit"
         variants={variants}
-        transition={{ duration: 1, type: "easeInOut" }}
+        transition={{ duration: 0.8, type: "easeInOut" }}
         style={{ position: "relative" }}
         className={classes.container}
       >

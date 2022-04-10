@@ -15,6 +15,7 @@ import {
   IoLogoGithub,
   IoLogoWechat,
 } from "react-icons/io5";
+
 import { motion } from "framer-motion";
 import Paragraph from "../components/Content/Paragraph/Paragraph";
 import NextLink from "next/link";
@@ -22,6 +23,7 @@ import { BioSection, BioYear } from "../components/Content/Paragraph/bio";
 import { GridItem } from "../components/Content/Paragraph/GridItem";
 import thumbInkdrop from "../public/images/index/albumPic2_helloKitty.jpg";
 import thumbYouTube from "../public/images/index/albumPic3_helloKitty.jpg";
+import { AiOutlineWeibo } from "react-icons/ai";
 
 export default function Home() {
   return (
@@ -75,7 +77,7 @@ export default function Home() {
         </NextLink>
       </Paragraph>
       <Box align="center" my={4}>
-        <NextLink href="/Works" scroll={false}>
+        <NextLink href="/works" scroll={false}>
           <Button colorScheme="pink" variant="outline">
             我的作品
           </Button>
@@ -142,23 +144,23 @@ export default function Home() {
             colorScheme="pink"
             leftIcon={<IoLogoWechat />}
           >
-            tanuki20966
+            Ali3n0702
           </Button>
         </ListItem>
         <ListItem>
-          <Link href="https://github.com/feavel1" target="_blank">
+          <Link href="https://weibo.com/u/5537617622" target="_blank">
             <Button
               variant="ghost"
               colorScheme="pink"
-              leftIcon={<IoLogoGithub />}
+              leftIcon={<AiOutlineWeibo />}
             >
-              @feavel1
+              海洋细菌草莓糖
             </Button>
           </Link>
         </ListItem>
       </List>
 
-      <SimpleGrid columns={[1, 2, 2]} gap={6}>
+      <SimpleGrid columns={[1, 2, 2]} gap={6} mt={3}>
         <GridItem
           href="https://music.163.com/#/playlist?id=5085085377"
           title="Listen To My Recent Music"

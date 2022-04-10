@@ -52,23 +52,31 @@ export default function Header() {
           >
             <ul>
               <li>
-                <Link href="/Works" onClick={menuToggleHandler}>
+                <Link href="/works" onClick={menuToggleHandler} scroll={false}>
                   作品
                 </Link>
               </li>
               <li>
-                <Link href="/Game" onClick={menuToggleHandler}>
+                <Link href="/Game" onClick={menuToggleHandler} scroll={false}>
                   学习
                 </Link>
               </li>
               <li>
-                <Link href="/Works/Album" onClick={menuToggleHandler}>
+                <Link
+                  href="/works/Album"
+                  onClick={menuToggleHandler}
+                  scroll={false}
+                >
                   相册
                 </Link>
               </li>
 
               <li>
-                <Link href="/Works/Album" onClick={menuToggleHandler}>
+                <Link
+                  href="/works/Album"
+                  onClick={menuToggleHandler}
+                  scroll={false}
+                >
                   联系
                 </Link>
               </li>
