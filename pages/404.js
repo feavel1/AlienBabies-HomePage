@@ -21,7 +21,7 @@ const NotFound = () => {
         <Text>但是这里有点出错了</Text>
         <Divider my={8} />
         <Box my={6} align="center">
-          <NextLink href="/">
+          <NextLink href="/" passHref>
             <Button colorScheme="pink">点我返回主页</Button>
           </NextLink>
         </Box>
