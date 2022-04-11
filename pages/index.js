@@ -10,8 +10,6 @@ import {
   SimpleGrid,
 } from "@chakra-ui/react";
 import { IoLogoTiktok, IoLogoInstagram, IoLogoWechat } from "react-icons/io5";
-
-import { motion } from "framer-motion";
 import Paragraph from "../components/Content/Paragraph/Paragraph";
 import NextLink from "next/link";
 import { BioSection, BioYear } from "../components/Content/Paragraph/Bio";
@@ -46,17 +44,12 @@ export default function Home() {
             borderRadius="100%"
             overflow="hidden"
           >
-            <motion.div
-              animate={{ rotate: [0, 45, 0, -45, 0] }}
-              transition={{ duration: 5 }}
-            >
-              <Image
-                src="/images/index/albumPic10_helloKitty.jpg"
-                alt="Profile image"
-                width="100%"
-                height="100%"
-              />
-            </motion.div>
+            <Image
+              src="/images/index/albumPic10_helloKitty.jpg"
+              alt="Profile image"
+              width="100%"
+              height="100%"
+            />
           </Box>
         </Box>
       </Box>
@@ -157,7 +150,7 @@ export default function Home() {
 
       <SimpleGrid columns={[1, 2, 2]} gap={6} mt={3}>
         <GridItem
-          href="https://music.163.com/#/playlist?id=5085085377"
+          href="https://www.douyin.com/user/MS4wLjABAAAABZed-RkD7nT5SHozVpyjQJmhZFNXQWWXrh6oTn_sX9E"
           title="我的作品"
           thumbnail={thumbYouTube}
         >
