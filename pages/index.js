@@ -79,7 +79,7 @@ export default function Home() {
       </Heading>
       <BioSection>
         <BioYear>2002</BioYear>
-        出生在中国🇨🇳，父亲是一名艺术家，母亲是一名艺术家。
+        出生在中国🇨🇳
       </BioSection>
       <BioSection>
         <BioYear>2020</BioYear>
@@ -87,10 +87,10 @@ export default function Home() {
       </BioSection>
       <BioSection>
         <BioYear>2021</BioYear>
-        在大学里学习: 室内设计🏡 and 化妆💋
+        大学里学习: 室内设计 and 化妆
       </BioSection>
       <BioSection>
-        <BioYear>2022 - </BioYear>
+        <BioYear>2018 - </BioYear>
         我的化妆师生涯💋
       </BioSection>
 
