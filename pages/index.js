@@ -9,17 +9,12 @@ import {
   ListItem,
   SimpleGrid,
 } from "@chakra-ui/react";
-import {
-  IoLogoTiktok,
-  IoLogoInstagram,
-  IoLogoGithub,
-  IoLogoWechat,
-} from "react-icons/io5";
+import { IoLogoTiktok, IoLogoInstagram, IoLogoWechat } from "react-icons/io5";
 
 import { motion } from "framer-motion";
 import Paragraph from "../components/Content/Paragraph/Paragraph";
 import NextLink from "next/link";
-import { BioSection, BioYear } from "../components/Content/Paragraph/bio";
+import { BioSection, BioYear } from "../components/Content/Paragraph/Bio";
 import { GridItem } from "../components/Content/Paragraph/GridItem";
 import thumbInkdrop from "../public/images/index/albumPic2_helloKitty.jpg";
 import thumbYouTube from "../public/images/index/albumPic3_helloKitty.jpg";
