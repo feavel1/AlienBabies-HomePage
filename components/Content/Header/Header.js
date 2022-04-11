@@ -52,18 +52,18 @@ export default function Header() {
           >
             <ul>
               <li>
-                <Link href="/works" onClick={menuToggleHandler} scroll={false}>
+                <Link href="/Works" onClick={menuToggleHandler} scroll={false}>
                   作品
                 </Link>
               </li>
               <li>
-                <Link href="/Game" onClick={menuToggleHandler} scroll={false}>
-                  学习
+                <Link href="/Posts" onClick={menuToggleHandler} scroll={false}>
+                  帖子
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/works/Album"
+                  href="/Works/Album"
                   onClick={menuToggleHandler}
                   scroll={false}
                 >
@@ -73,7 +73,7 @@ export default function Header() {
 
               <li>
                 <Link
-                  href="/works/Album"
+                  href="/Contact"
                   onClick={menuToggleHandler}
                   scroll={false}
                 >

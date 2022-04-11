@@ -65,7 +65,7 @@ export default function Home() {
         </NextLink>
       </Paragraph>
       <Box align="center" my={4}>
-        <NextLink href="/works" passHref scroll={false}>
+        <NextLink href="/Works" passHref scroll={false}>
           <Button colorScheme="pink" variant="outline">
             我的作品
           </Button>
@@ -166,7 +166,7 @@ export default function Home() {
       </SimpleGrid>
 
       <Box align="center" my={4}>
-        <NextLink href="/posts" passHref scroll={false}>
+        <NextLink href="/Works/Album" passHref scroll={false}>
           <Button colorScheme="pink" variant="outline">
             火爆视频
           </Button>
