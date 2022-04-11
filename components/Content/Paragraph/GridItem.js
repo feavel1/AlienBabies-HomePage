@@ -25,7 +25,7 @@ export function GridItem({ children, href, title, thumbnail }) {
 export function WorkGridItem({ children, id, title, thumbnail }) {
   return (
     <Box w="100%" textAlign="center">
-      <NextLink href={`/works/${id}`} scroll={false}>
+      <NextLink href={`/works/${id}`} passHref scroll={false}>
         <LinkBox cursor="pointer">
           <Image
             src={thumbnail}
@@ -42,17 +42,5 @@ export function WorkGridItem({ children, id, title, thumbnail }) {
         </LinkBox>
       </NextLink>
     </Box>
-  );
-}
-
-export function GridItemStyle() {
-  return (
-    <Global
-      styles={`
-      .grid-item-thumbnail {
-        border-radius: 12px;
-      }
-    `}
-    />
   );
 }
