@@ -62,11 +62,7 @@ export default function Header() {
                 </Link>
               </li>
               <li>
-                <Link
-                  href="/Works/Album"
-                  onClick={menuToggleHandler}
-                  scroll={false}
-                >
+                <Link href="/Album" onClick={menuToggleHandler} scroll={false}>
                   相册
                 </Link>
               </li>

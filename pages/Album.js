@@ -1,5 +1,5 @@
 import { Box, SimpleGrid } from "@chakra-ui/react";
-import Layout from "../../components/Layout/Layout";
+import Layout from "../components/Layout/Layout";
 
 export default function Album() {
   return (

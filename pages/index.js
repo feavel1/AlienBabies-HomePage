@@ -8,6 +8,7 @@ import {
   List,
   ListItem,
   SimpleGrid,
+  Text,
 } from "@chakra-ui/react";
 import { IoLogoTiktok, IoLogoInstagram, IoLogoWechat } from "react-icons/io5";
 import Paragraph from "../components/Content/Paragraph/Paragraph";
@@ -45,7 +46,7 @@ export default function Home() {
             overflow="hidden"
           >
             <Image
-              src="/images/index/albumPic10_helloKitty.jpg"
+              src="/images/album/albumPic9_helloKitty.jpg"
               alt="Profile image"
               width="100%"
               height="100%"
@@ -60,8 +61,8 @@ export default function Home() {
         尊重他人 1.尊重他人是一个人内在修养的外在表现
         2.每个人都是有尊严的个体都希望得到他人的尊重
         3.要想自己被尊重，先尊重别人🫡 .{" "}
-        <NextLink href="/Works" scroll={false} variant="text">
-          查看原文
+        <NextLink href="/Works" passHref scroll={false} variant="text">
+          <Link color="pink.200">查看原文</Link>
         </NextLink>
       </Paragraph>
       <Box align="center" my={4}>
@@ -166,7 +167,7 @@ export default function Home() {
       </SimpleGrid>
 
       <Box align="center" my={4}>
-        <NextLink href="/Works/Album" passHref scroll={false}>
+        <NextLink href="/Posts" passHref scroll={false}>
           <Button colorScheme="pink" variant="outline">
             火爆视频
           </Button>

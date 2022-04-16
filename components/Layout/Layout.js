@@ -36,7 +36,7 @@ function Layout(p) {
         style={{ position: "relative" }}
         className={classes.container}
       >
-        <Container maxW="xl">
+        <Container maxW="2xl">
           {p.children}
           <Footer />
         </Container>
