@@ -60,7 +60,7 @@ export default function Home() {
         尊重他人 1.尊重他人是一个人内在修养的外在表现
         2.每个人都是有尊严的个体都希望得到他人的尊重
         3.要想自己被尊重，先尊重别人🫡 .{" "}
-        <NextLink href="/works/dark-birds-fly" scroll={false} variant="text">
+        <NextLink href="/Works" scroll={false} variant="text">
           查看原文
         </NextLink>
       </Paragraph>
