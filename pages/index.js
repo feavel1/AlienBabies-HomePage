@@ -14,7 +14,10 @@ import { IoLogoTiktok, IoLogoInstagram, IoLogoWechat } from "react-icons/io5";
 import Paragraph from "../components/Content/Paragraph/Paragraph";
 import NextLink from "next/link";
 import { BioSection, BioYear } from "../components/Content/Paragraph/Bio";
-import { GridItem } from "../components/Content/Paragraph/GridItem";
+import {
+  GridItem,
+  WorkGridItem,
+} from "../components/Content/Paragraph/GridItem";
 import thumbInkdrop from "../public/images/index/albumPic2_helloKitty.jpg";
 import thumbYouTube from "../public/images/index/albumPic3_helloKitty.jpg";
 import { AiOutlineWeibo } from "react-icons/ai";
@@ -150,13 +153,9 @@ export default function Home() {
       </List>
 
       <SimpleGrid columns={[1, 2, 2]} gap={6} mt={3}>
-        <GridItem
-          href="https://www.douyin.com/user/MS4wLjABAAAABZed-RkD7nT5SHozVpyjQJmhZFNXQWWXrh6oTn_sX9E"
-          title="我的作品"
-          thumbnail={thumbYouTube}
-        >
+        <WorkGridItem id="" title="我的作品" thumbnail={thumbYouTube}>
           Photo Album
-        </GridItem>
+        </WorkGridItem>
         <GridItem
           href="https://feavel.com"
           title="我最可爱的男朋友"
