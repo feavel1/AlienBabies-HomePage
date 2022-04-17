@@ -3,16 +3,17 @@ import {
   Box,
   Button,
   Heading,
-  Image,
   Link,
   List,
   ListItem,
   SimpleGrid,
   Text,
 } from "@chakra-ui/react";
-import { IoLogoTiktok, IoLogoInstagram, IoLogoWechat } from "react-icons/io5";
-import Paragraph from "../components/Content/Paragraph/Paragraph";
+import Image from "next/image";
 import NextLink from "next/link";
+import { IoLogoTiktok, IoLogoInstagram, IoLogoWechat } from "react-icons/io5";
+import { AiOutlineWeibo } from "react-icons/ai";
+import Paragraph from "../components/Content/Paragraph/Paragraph";
 import { BioSection, BioYear } from "../components/Content/Paragraph/Bio";
 import {
   GridItem,
@@ -20,7 +21,7 @@ import {
 } from "../components/Content/Paragraph/GridItem";
 import thumbInkdrop from "../public/images/index/albumPic2_helloKitty.jpg";
 import thumbYouTube from "../public/images/index/albumPic3_helloKitty.jpg";
-import { AiOutlineWeibo } from "react-icons/ai";
+import albumPic10_helloKitty from "../public/images/index/albumPic10_helloKitty.jpg";
 
 export default function Home() {
   return (
@@ -49,10 +50,9 @@ export default function Home() {
             overflow="hidden"
           >
             <Image
-              src="/images/album/albumPic9_helloKitty.jpg"
+              src={albumPic10_helloKitty}
               alt="Profile image"
-              width="100%"
-              height="100%"
+              placeholder="blur"
             />
           </Box>
         </Box>
