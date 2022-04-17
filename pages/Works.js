@@ -61,7 +61,7 @@ export default function Works() {
         columns={[1, 2, 3]}
         spacing={8}
         mb={4}
-        style={{ transform: `translateY(-${offsetY * 0.05}px)` }}
+        style={{ transform: `translateY(-${offsetY * 0.27}px)` }}
       >
         <div>
           <WorkGridItem id="no1" thumbnail={albumPic4} title="婚礼">
