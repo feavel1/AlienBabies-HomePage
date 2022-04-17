@@ -12,15 +12,13 @@ import albumPic9 from "../public/images/album/albumPic9_helloKitty.jpg";
 export default function Works() {
   return (
     <Layout title="作品">
-      <Container>
-        <Heading as="h3" fontSize={30} mb={4} textAlign="center">
-          Make-Ups
-        </Heading>
-        <SimpleGrid columns={[1, 1, 1]} spacing={8} mb={4}>
-          <WorkGridItem id="Cute" thumbnail={albumPic9} title="可爱">
-            Cute Make-up
-          </WorkGridItem>
-        </SimpleGrid>
+      <Heading as="h3" fontSize={30} mb={4} textAlign="center" color="pink.500">
+        化妆作品
+      </Heading>
+
+      {/* <WorkGridItem id="Cute" thumbnail={albumPic9} title="可爱">
+          Cute Make-up
+        </WorkGridItem>
 
         <SimpleGrid columns={[1, 1, 2]} spacing={8} mb={4}>
           <WorkGridItem id="no1" thumbnail={albumPic2} title="哥特">
@@ -40,8 +38,7 @@ export default function Works() {
           <WorkGridItem id="no1" thumbnail={albumPic6} title="服装">
             Clothes and other
           </WorkGridItem>
-        </SimpleGrid>
-      </Container>
+        </SimpleGrid> */}
     </Layout>
   );
 }

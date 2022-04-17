@@ -58,7 +58,7 @@ export default function Home() {
         </Box>
       </Box>
       <Heading as="h3" variant="section-title">
-        个人目标
+        介绍
       </Heading>
       <Paragraph>
         尊重他人 1.尊重他人是一个人内在修养的外在表现

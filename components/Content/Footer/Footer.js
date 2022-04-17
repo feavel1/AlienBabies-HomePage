@@ -1,9 +1,10 @@
 import classes from "./Footer.module.css";
+import { Box } from "@chakra-ui/react";
 
 export default function Footer() {
   return (
-    <footer className={classes.footer}>
-      <a>© 2022 Feavel & Tang. All Rights Reserved.</a>
-    </footer>
+    <Box className={classes.footer}>
+      © 2022 Feavel & Tang. All Rights Reserved.
+    </Box>
   );
 }

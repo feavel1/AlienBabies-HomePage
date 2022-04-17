@@ -31,7 +31,7 @@ export function WorkGridItem({ children, id, title, thumbnail }) {
             src={thumbnail}
             alt={title}
             placeholder="blur"
-            style={{ borderRadius: "12px" }}
+            style={{ borderRadius: "5px" }}
           />
           <LinkOverlay href={`/Works/${id}`}>
             <Text mt={2} fontSize={20}>
