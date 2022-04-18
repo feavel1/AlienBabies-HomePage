@@ -3,6 +3,7 @@ import { AnimatePresence } from "framer-motion";
 import customTheme from "../styles/theme";
 import Header from "../components/Content/Header/Header";
 import ThreeScene from "../components/three/ThreeScene";
+import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 
 function MyApp({ Component, pageProps, router }) {
   return (
@@ -15,6 +16,7 @@ function MyApp({ Component, pageProps, router }) {
       />
       <Header />
       <ThreeScene />
+
       <AnimatePresence
         exitBeforeEnter
         initial={true}
