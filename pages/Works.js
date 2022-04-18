@@ -24,18 +24,18 @@ export default function Works() {
       <Heading
         as="h3"
         fontSize={30}
-        mt="300px"
-        mb="600px"
+        mt="50%"
+        mb="50%"
         textAlign="center"
         color="pink.100"
       >
-        <div style={{ transform: `translateY(-${offsetY * 0.95}px)` }}>
+        <div style={{ transform: `translateY(-${offsetY * 0.5}px)` }}>
           化妆作品
         </div>
         <div>↓</div>
       </Heading>
 
-      <Box mb={4} style={{ transform: `translateY(-${offsetY * 0.7}px)` }}>
+      <Box mb={4} style={{ transform: `translateY(-${offsetY * 0.35}px)` }}>
         <WorkGridItem id="Cute" thumbnail={albumPic9} title="可爱">
           Cute Make-up
         </WorkGridItem>
@@ -45,7 +45,7 @@ export default function Works() {
         columns={[1, 1, 2]}
         spacing={8}
         mb="4"
-        style={{ transform: `translateY(-${offsetY * 0.45}px)` }}
+        style={{ transform: `translateY(-${offsetY * 0.25}px)` }}
       >
         <WorkGridItem id="no1" thumbnail={albumPic2} title="哥特">
           Goth Make-up
@@ -61,7 +61,7 @@ export default function Works() {
         columns={[1, 2, 3]}
         spacing={8}
         mb={4}
-        style={{ transform: `translateY(-${offsetY * 0.27}px)` }}
+        style={{ transform: `translateY(-${offsetY * 0.1}px)` }}
       >
         <div>
           <WorkGridItem id="no1" thumbnail={albumPic4} title="婚礼">
