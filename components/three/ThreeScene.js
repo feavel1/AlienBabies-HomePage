@@ -48,7 +48,7 @@ class ThreeScene extends Component {
       scene.add(mesh);
 
       renderer = new THREE.WebGLRenderer();
-      renderer.setPixelRatio(window.devicePixelRatio / 2);
+      renderer.setPixelRatio(window.devicePixelRatio / 3); //Change Resolution
 
       container.appendChild(renderer.domElement);
 
