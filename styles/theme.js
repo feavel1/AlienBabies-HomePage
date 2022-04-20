@@ -49,7 +49,7 @@ const overrides = {
   styles: {
     global: (props) => ({
       body: {
-        bg: mode("WhiteAlpha100", "#521B41")(props),
+        bg: mode("White", "Black")(props),
         color: mode("black", "white")(props),
       },
     }),
