@@ -33,7 +33,7 @@ export default function Works() {
         </Box>
       </SimpleGrid>
 
-      <Parallax speed={-2}>
+      <Parallax speed={-3}>
         <Heading as="h3" variant="section-title" align="center" mt="50%">
           不同类型
         </Heading>
@@ -49,7 +49,7 @@ export default function Works() {
         </WorkGridItem>
       </SimpleGrid>
 
-      <Parallax speed={-1.3}>
+      <Parallax speed={-2}>
         <Heading as="h3" variant="section-title" align="center" mt="50%">
           其他化妆
         </Heading>

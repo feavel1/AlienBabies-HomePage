@@ -26,7 +26,7 @@ export default function Home() {
   return (
     <Layout title="主页">
       {/* Head */}
-      <Parallax speed={-1.5}>
+      <Parallax speed={-3}>
         <Box display={{ md: "flex" }}>
           <Box flexGrow={1}>
             <Heading as="h1" variant="page-title">
@@ -61,15 +61,16 @@ export default function Home() {
       </Parallax>
 
       {/* 介绍 */}
-      <Parallax speed={-1.25}>
-        <Heading as="h3" variant="section-title">
-          个人介绍
+      <Parallax speed={-2.5}>
+        <Heading as="h3" variant="section-title" textAlign="right">
+          自我介绍
         </Heading>
+        <Paragraph>我是一名来自深圳的化妆师,</Paragraph>
+        <Paragraph>为自己的工作负责, </Paragraph>{" "}
+        <Paragraph>帮助有需要的人,</Paragraph>
         <Paragraph>
-          我是一名来自深圳的化妆师，为自己的工作负责，帮助有需要的人。善于和人交流，对每一份🫡
-          .{" "}
           <NextLink href="/Works" passHref scroll={false} variant="text">
-            <Link color="pink.200">查看原文</Link>
+            <Link color="pink.200">查看原文.</Link>
           </NextLink>
         </Paragraph>
         <Box align="center" my={4}>
@@ -80,11 +81,11 @@ export default function Home() {
       </Parallax>
 
       {/* 联系 */}
-      <Parallax speed={-1}>
-        <Heading as="h3" variant="section-title" mr={0}>
+      <Parallax speed={-2}>
+        <Heading as="h3" variant="section-title" mr={0} textAlign="right">
           如何联系我？
         </Heading>
-        <List>
+        <List textAlign="right">
           <ListItem>
             <Link
               href="https://www.douyin.com/user/MS4wLjABAAAABZed-RkD7nT5SHozVpyjQJmhZFNXQWWXrh6oTn_sX9E"
@@ -93,7 +94,7 @@ export default function Home() {
               <Button
                 variant="ghost"
                 colorScheme="pink"
-                leftIcon={<IoLogoTiktok />}
+                rightIcon={<IoLogoTiktok />}
               >
                 Ali3nbabies
               </Button>
@@ -107,7 +108,7 @@ export default function Home() {
               <Button
                 variant="ghost"
                 colorScheme="pink"
-                leftIcon={<IoLogoInstagram />}
+                rightIcon={<IoLogoInstagram />}
               >
                 iloveali3nbabies
               </Button>
@@ -119,7 +120,7 @@ export default function Home() {
               <Button
                 variant="ghost"
                 colorScheme="pink"
-                leftIcon={<AiOutlineWeibo />}
+                rightIcon={<AiOutlineWeibo />}
               >
                 海洋细菌草莓糖
               </Button>
@@ -134,7 +135,7 @@ export default function Home() {
       </Parallax>
 
       {/* Grid */}
-      <Parallax speed={-0.5}>
+      <Parallax speed={-0.75}>
         <SimpleGrid columns={[1, 2, 2]} gap={6} mt={3}>
           <WorkGridItem id="" title="我的作品" thumbnail={thumbYouTube}>
             Photo Album
