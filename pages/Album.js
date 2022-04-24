@@ -25,7 +25,7 @@ export default function Album() {
       </SimpleGrid>
       <Box align="center" my={6}>
         <NextLink href="/Contact" passHref scroll={false}>
-          <Button colorScheme="pink">联系方式</Button>
+          <Button colorScheme="pink">联系方式&介绍</Button>
         </NextLink>
       </Box>
     </Layout>
