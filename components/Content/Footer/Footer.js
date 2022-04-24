@@ -4,7 +4,8 @@ import { Box } from "@chakra-ui/react";
 export default function Footer() {
   return (
     <Box className={classes.footer}>
-      © 2022 Feavel & Tang. All Rights Reserved.
+      <a>© 2022 Feavel & Tang</a>
+      <a>All Rights Reserved.</a>
     </Box>
   );
 }

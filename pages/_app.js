@@ -9,12 +9,12 @@ function MyApp({ Component, pageProps, router }) {
     <ChakraProvider resetCSS theme={customTheme}>
       <ColorModeProvider
         options={{
-          initialColorMode: "dark",
           useSystemColorMode: true,
+          initialColorMode: "system",
         }}
       />
       <Header />
-      <ThreeScene />
+      {/* <ThreeScene /> */}
 
       <AnimatePresence
         exitBeforeEnter

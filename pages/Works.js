@@ -1,7 +1,8 @@
-import { Box, Heading, SimpleGrid } from "@chakra-ui/react";
+import { Box, Button, Heading, SimpleGrid } from "@chakra-ui/react";
 import { WorkGridItem } from "../components/Content/Paragraph/GridItem";
 import Layout from "../components/Layout/Layout";
 import Parallax from "../components/Parallax";
+import NextLink from "next/link";
 
 import albumPic2 from "../public/images/album/albumPic4_helloKitty.jpg";
 import albumPic3 from "../public/images/album/albumPic5_helloKitty.jpg";
@@ -13,19 +14,12 @@ import albumPic9 from "../public/images/album/albumPic9_helloKitty.jpg";
 export default function Works() {
   return (
     <Layout title="作品">
-      <Heading
-        as="h3"
-        fontSize={30}
-        textAlign="center"
-        color="#880E4F"
-        mt="60%"
-        mb="60%"
-      >
-        <Parallax speed={-10}>化妆作品</Parallax>
-        <Parallax speed={-7}>↓</Parallax>
+      <Heading as="h3" fontSize={30} textAlign="center" mt="45%" mb="60%">
+        <Parallax speed={-5}>化妆作品</Parallax>
+        <Parallax speed={3}>↓</Parallax>
       </Heading>
 
-      <SimpleGrid columns={[1, 1, 1]} spacing={8} mt="50%" mb="60%">
+      <SimpleGrid columns={[1, 1, 1]} spacing={8} mt="50%" mb="40%">
         <Box mb={4}>
           <WorkGridItem id="Cute" thumbnail={albumPic9} title="可爱">
             Cute Make-up
@@ -33,13 +27,13 @@ export default function Works() {
         </Box>
       </SimpleGrid>
 
-      <Parallax speed={-3}>
-        <Heading as="h3" variant="section-title" align="center" mt="50%">
+      <Parallax speed={-2}>
+        <Heading as="h3" variant="section-title" align="center">
           不同类型
         </Heading>
       </Parallax>
 
-      <SimpleGrid columns={[1, 1, 2]} spacing={8} mb="60%">
+      <SimpleGrid columns={[1, 2, 2]} spacing={8} mb="30%">
         <WorkGridItem id="no1" thumbnail={albumPic2} title="哥特">
           Goth Make-up
         </WorkGridItem>
@@ -49,9 +43,9 @@ export default function Works() {
         </WorkGridItem>
       </SimpleGrid>
 
-      <Parallax speed={-2}>
-        <Heading as="h3" variant="section-title" align="center" mt="50%">
-          其他化妆
+      <Parallax speed={-0.9}>
+        <Heading as="h3" variant="section-title" align="center">
+          与其他作品
         </Heading>
       </Parallax>
       <SimpleGrid columns={[1, 2, 3]} spacing={8}>
@@ -66,6 +60,11 @@ export default function Works() {
           Clothes and other
         </WorkGridItem>
       </SimpleGrid>
+      <Box align="center" my="50px">
+        <NextLink href="/Posts" passHref scroll={false}>
+          <Button colorScheme="pink">我的帖子</Button>
+        </NextLink>
+      </Box>
     </Layout>
   );
 }

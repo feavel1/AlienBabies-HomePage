@@ -1,4 +1,4 @@
-import { theme as chakraTheme, useColorModeValue } from "@chakra-ui/react";
+import { theme as chakraTheme } from "@chakra-ui/react";
 import { extendTheme } from "@chakra-ui/react";
 import { createBreakpoints, mode } from "@chakra-ui/theme-tools";
 
