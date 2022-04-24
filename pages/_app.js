@@ -10,11 +10,11 @@ function MyApp({ Component, pageProps, router }) {
       <ColorModeProvider
         options={{
           useSystemColorMode: true,
-          initialColorMode: "system",
+          initialColorMode: "dark",
         }}
       />
       <Header />
-      {/* <ThreeScene /> */}
+      <ThreeScene />
 
       <AnimatePresence
         exitBeforeEnter
