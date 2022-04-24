@@ -61,7 +61,7 @@ export default function Feavel() {
 
         <List textAlign="left" mt={4}>
           <ListItem>
-            <Link href="feavel.com" target="_blank">
+            <Link href="https://feavel.com/" target="_blank">
               <Button
                 variant="ghost"
                 colorScheme="pink"

@@ -67,8 +67,15 @@ export default function Home() {
       <Paragraph>为自己的工作负责, </Paragraph>{" "}
       <Paragraph>帮助有需要的人,</Paragraph>
       <Paragraph>
-        <NextLink href="/Works" passHref scroll={false} variant="text">
-          <Link color="pink.200">查看原文.</Link>
+        <NextLink
+          href="https://en.wikipedia.org/wiki/Karl_Marx"
+          passHref
+          scroll={false}
+          variant="text"
+        >
+          <Link color="pink.300" target="_blank">
+            查看原文.
+          </Link>
         </NextLink>
       </Paragraph>
       <Parallax speed={-0.7}>
@@ -79,10 +86,10 @@ export default function Home() {
         </Box>
       </Parallax>
       {/* 联系 */}
-      <Heading as="h3" variant="section-title" mr={0} textAlign="right">
+      <Heading as="h3" variant="section-title" mr={0} textAlign="lleft">
         如何联系我？
       </Heading>
-      <List textAlign="right">
+      <List textAlign="left">
         <ListItem>
           <Link href="https://v.douyin.com/FRdVhqo/" target="_blank">
             <Button
