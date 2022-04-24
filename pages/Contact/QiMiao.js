@@ -1,6 +1,6 @@
 import { Box, Button, Heading, Link, List, ListItem } from "@chakra-ui/react";
 import Image from "next/image";
-import { AiOutlineLink, IoLogoInstagram } from "react-icons/ai";
+import { IoLogoInstagram } from "react-icons/io";
 import Layout from "../../components/Layout/Layout";
 import { BioSection, BioYear } from "../../components/Content/Paragraph/Bio";
 import albumPic2 from "../../public/images/album/albumPic4_helloKitty.jpg";
