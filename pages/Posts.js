@@ -12,7 +12,7 @@ export default function Posts() {
     <Layout title="帖子">
       <Heading as="h3" fontSize={30} textAlign="center" mt="45%" mb="45%">
         <Parallax speed={-3}>我的帖子</Parallax>
-        <Parallax speed={-1}>↓</Parallax>
+        <Parallax speed={19.3}>↓</Parallax>
       </Heading>
       <SimpleGrid columns={[1, 2, 3]} spacing={8} mt="50%" mb="60%">
         <Box mb={4}>
@@ -38,7 +38,7 @@ export default function Posts() {
         </Heading>
       </Parallax>
 
-      <SimpleGrid columns={[1, 2, 2]} spacing={8} mb="50%">
+      <SimpleGrid columns={[1, 2, 2]} spacing={8} mb="40%">
         <Box mb={4}>
           <WorkGridItem id="Cute" thumbnail={albumPic2} title="红钻">
             Red Diamond

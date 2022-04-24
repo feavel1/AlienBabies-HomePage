@@ -16,7 +16,7 @@ export default function Works() {
     <Layout title="作品">
       <Heading as="h3" fontSize={30} textAlign="center" mt="45%" mb="60%">
         <Parallax speed={-5}>化妆作品</Parallax>
-        <Parallax speed={3}>↓</Parallax>
+        <Parallax speed={18.1}>↓</Parallax>
       </Heading>
 
       <SimpleGrid columns={[1, 1, 1]} spacing={8} mt="50%" mb="40%">
