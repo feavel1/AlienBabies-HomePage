@@ -73,10 +73,7 @@ export default function Contact() {
 
         <List textAlign="left" mt={4}>
           <ListItem>
-            <Link
-              href="https://www.douyin.com/user/MS4wLjABAAAABZed-RkD7nT5SHozVpyjQJmhZFNXQWWXrh6oTn_sX9E"
-              target="_blank"
-            >
+            <Link href="https://v.douyin.com/FRdVhqo/" target="_blank">
               <Button
                 variant="ghost"
                 colorScheme="pink"

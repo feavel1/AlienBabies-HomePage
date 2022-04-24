@@ -33,7 +33,7 @@ export default function Home() {
           </Heading>
           <p>网络艺术( 化妆师 / 可爱 / 室内设计 )</p>
         </Box>
-        <Parallax speed={-3}>
+        <Parallax speed={-1}>
           <Box
             flexShrink={0}
             mt={{ base: 4, md: 0 }}
@@ -71,8 +71,8 @@ export default function Home() {
           <Link color="pink.200">查看原文.</Link>
         </NextLink>
       </Paragraph>
-      <Parallax speed={-2.5}>
-        <Box align="center" my={4}>
+      <Parallax speed={-0.7}>
+        <Box align="center" my={6}>
           <NextLink href="/Works" passHref scroll={false}>
             <Button colorScheme="pink">我的作品</Button>
           </NextLink>
@@ -84,10 +84,7 @@ export default function Home() {
       </Heading>
       <List textAlign="right">
         <ListItem>
-          <Link
-            href="https://www.douyin.com/user/MS4wLjABAAAABZed-RkD7nT5SHozVpyjQJmhZFNXQWWXrh6oTn_sX9E"
-            target="_blank"
-          >
+          <Link href="https://v.douyin.com/FRdVhqo/" target="_blank">
             <Button
               variant="ghost"
               colorScheme="pink"
@@ -124,8 +121,8 @@ export default function Home() {
           </Link>
         </ListItem>
       </List>
-      <Parallax speed={-2}>
-        <Box align="center" my={4}>
+      <Parallax speed={-0.3}>
+        <Box align="center" my={6}>
           <NextLink href="/Contact" passHref scroll={false}>
             <Button colorScheme="pink">联系方式</Button>
           </NextLink>
@@ -145,7 +142,7 @@ export default function Home() {
           feavel.com
         </GridItem>
       </SimpleGrid>
-      <Box align="center" my={2}>
+      <Box align="center" my={6}>
         <NextLink href="/Posts" passHref scroll={false}>
           <Button colorScheme="pink">帖子</Button>
         </NextLink>

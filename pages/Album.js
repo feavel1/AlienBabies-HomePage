@@ -10,8 +10,8 @@ export default function Album() {
   return (
     <Layout title="相册">
       <Heading as="h3" fontSize={30} textAlign="center" mt="45%" mb="60%">
-        <Parallax speed={-0.2}>相册</Parallax>
-        <Parallax speed={5.8}>↓</Parallax>
+        <Parallax speed={-1}>相册</Parallax>
+        <Parallax speed={-2}>↓</Parallax>
       </Heading>
 
       <SimpleGrid columns={[1, 2, 2]} spacing={8}>
@@ -23,7 +23,7 @@ export default function Album() {
           some photos
         </WorkGridItem>
       </SimpleGrid>
-      <Box align="center" my={4}>
+      <Box align="center" my={6}>
         <NextLink href="/Contact" passHref scroll={false}>
           <Button colorScheme="pink">联系方式</Button>
         </NextLink>
