@@ -4,6 +4,8 @@ import Layout from "../components/Layout/Layout";
 import Parallax from "../components/Parallax";
 import NextLink from "next/link";
 
+import albumPic1 from "../public/images/works/image1.webp";
+
 import albumPic2 from "../public/images/album/albumPic4_helloKitty.jpg";
 import albumPic3 from "../public/images/album/albumPic5_helloKitty.jpg";
 import albumPic4 from "../public/images/album/albumPic6_helloKitty.jpg";
@@ -21,7 +23,7 @@ export default function Works() {
 
       <SimpleGrid columns={[1, 1, 1]} spacing={8} mt="50%" mb="40%">
         <Box mb={4}>
-          <WorkGridItem id="Cute" thumbnail={albumPic9} title="可爱">
+          <WorkGridItem id="Cute" thumbnail={albumPic1} title="可爱">
             Cute Make-up
           </WorkGridItem>
         </Box>

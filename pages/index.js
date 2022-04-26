@@ -18,9 +18,9 @@ import {
   WorkGridItem,
 } from "../components/Content/Paragraph/GridItem";
 import Parallax from "../components/Parallax";
-import thumbInkdrop from "../public/images/index/albumPic2_helloKitty.jpg";
-import thumbYouTube from "../public/images/index/albumPic3_helloKitty.jpg";
-import albumPic10_helloKitty from "../public/images/index/albumPic10_helloKitty.jpg";
+import thumbInkdrop from "../public/images/index/image.webp";
+import thumbYouTube from "../public/images/index/image2.webp";
+import albumPic10_helloKitty from "../public/images/index/image4.webp";
 
 export default function Home() {
   return (
@@ -60,7 +60,7 @@ export default function Home() {
         </Parallax>
       </Box>
       {/* 介绍 */}
-      <Heading as="h3" variant="section-title" textAlign="right">
+      <Heading as="h3" variant="section-title" textAlign="left">
         自我介绍
       </Heading>
       <Paragraph>我是一名来自深圳的化妆师,</Paragraph>
@@ -95,7 +95,7 @@ export default function Home() {
             <Button
               variant="ghost"
               colorScheme="pink"
-              rightIcon={<IoLogoTiktok />}
+              leftIcon={<IoLogoTiktok />}
             >
               Ali3nbabies
             </Button>
@@ -109,7 +109,7 @@ export default function Home() {
             <Button
               variant="ghost"
               colorScheme="pink"
-              rightIcon={<IoLogoInstagram />}
+              leftIcon={<IoLogoInstagram />}
             >
               iloveali3nbabies
             </Button>
@@ -121,7 +121,7 @@ export default function Home() {
             <Button
               variant="ghost"
               colorScheme="pink"
-              rightIcon={<AiOutlineWeibo />}
+              leftIcon={<AiOutlineWeibo />}
             >
               海洋细菌草莓糖
             </Button>
