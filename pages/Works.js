@@ -29,11 +29,11 @@ export default function Works() {
       </Heading>
 
       <SimpleGrid columns={[2, 2, 2]} spacing={8} mt="50%" mb="40%">
-        <WorkGridItem id="no1" thumbnail={oilCover} title="Oil 亞人大逃殺">
+        <WorkGridItem id="Oil" thumbnail={oilCover} title="Oil 亞人大逃殺">
           Oil y2k live show
         </WorkGridItem>
 
-        <WorkGridItem id="no1" thumbnail={redCover} title="红钻">
+        <WorkGridItem id="Red-Diamond" thumbnail={redCover} title="红钻">
           Red Diamond
         </WorkGridItem>
       </SimpleGrid>

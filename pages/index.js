@@ -10,14 +10,13 @@ import {
 } from "@chakra-ui/react";
 import Image from "next/image";
 import NextLink from "next/link";
-import { IoLogoTiktok, IoLogoInstagram, IoLogoWechat } from "react-icons/io5";
+import { IoLogoTiktok, IoLogoInstagram } from "react-icons/io5";
 import { AiOutlineWeibo } from "react-icons/ai";
 import Paragraph from "../components/Content/Paragraph/Paragraph";
 import {
   GridItem,
   WorkGridItem,
 } from "../components/Content/Paragraph/GridItem";
-import Parallax from "../components/Parallax";
 import thumbInkdrop from "../public/images/index/image.webp";
 import thumbYouTube from "../public/images/index/image2.webp";
 import albumPic10_helloKitty from "../public/images/index/image4.webp";
