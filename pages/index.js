@@ -26,38 +26,37 @@ export default function Home() {
   return (
     <Layout title="主页">
       {/* Head */}
-      <Box display={{ md: "flex" }}>
+      <Box display={{ md: "flex" }} my={10}>
         <Box flexGrow={1}>
           <Heading as="h1" variant="page-title">
             Alien Baby
           </Heading>
           <p>网络艺术( 化妆师 / 可爱 / 室内设计 )</p>
         </Box>
-        <Parallax speed={-1}>
+
+        <Box
+          flexShrink={0}
+          mt={{ base: 4, md: 0 }}
+          ml={{ md: 6 }}
+          textAlign="center"
+        >
           <Box
-            flexShrink={0}
-            mt={{ base: 4, md: 0 }}
-            ml={{ md: 6 }}
-            textAlign="center"
+            borderColor="whiteAlpha.800"
+            borderWidth={2}
+            borderStyle="solid"
+            w="100px"
+            h="100px"
+            display="inline-block"
+            borderRadius="100%"
+            overflow="hidden"
           >
-            <Box
-              borderColor="whiteAlpha.800"
-              borderWidth={2}
-              borderStyle="solid"
-              w="100px"
-              h="100px"
-              display="inline-block"
-              borderRadius="100%"
-              overflow="hidden"
-            >
-              <Image
-                src={albumPic10_helloKitty}
-                alt="Profile image"
-                placeholder="blur"
-              />
-            </Box>
+            <Image
+              src={albumPic10_helloKitty}
+              alt="Profile image"
+              placeholder="blur"
+            />
           </Box>
-        </Parallax>
+        </Box>
       </Box>
       {/* 介绍 */}
       <Heading as="h3" variant="section-title" textAlign="left">
@@ -68,7 +67,7 @@ export default function Home() {
       <Paragraph>帮助有需要的人,</Paragraph>
       <Paragraph>
         <NextLink
-          href="https://en.wikipedia.org/wiki/Karl_Marx"
+          href="https://baike.baidu.com/item/%E9%A9%AC%E5%85%8B%E6%80%9D%E4%B8%BB%E4%B9%89%E5%93%B2%E5%AD%A6/165367?fr=aladdin"
           passHref
           scroll={false}
           variant="text"
@@ -78,13 +77,11 @@ export default function Home() {
           </Link>
         </NextLink>
       </Paragraph>
-      <Parallax speed={-0.7}>
-        <Box align="center" my={6}>
-          <NextLink href="/Works" passHref scroll={false}>
-            <Button colorScheme="pink">我的作品</Button>
-          </NextLink>
-        </Box>
-      </Parallax>
+      <Box align="center" my={4}>
+        <NextLink href="/Works" passHref scroll={false}>
+          <Button colorScheme="pink">我的作品</Button>
+        </NextLink>
+      </Box>
       {/* 联系 */}
       <Heading as="h3" variant="section-title" mr={0} textAlign="lleft">
         如何联系我？
@@ -128,13 +125,11 @@ export default function Home() {
           </Link>
         </ListItem>
       </List>
-      <Parallax speed={-0.3}>
-        <Box align="center" my={6}>
-          <NextLink href="/Contact" passHref scroll={false}>
-            <Button colorScheme="pink">联系方式</Button>
-          </NextLink>
-        </Box>
-      </Parallax>
+      <Box align="center" my={6}>
+        <NextLink href="/Contact" passHref scroll={false}>
+          <Button colorScheme="pink">联系方式</Button>
+        </NextLink>
+      </Box>
       {/* Grid */}
       <SimpleGrid columns={[1, 1, 2]} gap={6} mt={3}>
         <WorkGridItem id="" title="我的作品" thumbnail={thumbYouTube}>
