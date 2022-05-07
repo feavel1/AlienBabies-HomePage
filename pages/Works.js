@@ -3,18 +3,8 @@ import { WorkGridItem } from "../components/Content/Paragraph/GridItem";
 import Layout from "../components/Layout/Layout";
 import Parallax from "../components/Parallax";
 import NextLink from "next/link";
-
-import albumPic1 from "../public/images/works/image1.webp";
-
-import albumPic2 from "../public/images/album/albumPic4_helloKitty.jpg";
-import albumPic3 from "../public/images/album/albumPic5_helloKitty.jpg";
-import albumPic4 from "../public/images/album/albumPic6_helloKitty.jpg";
-import albumPic5 from "../public/images/album/albumPic7_helloKitty.jpg";
-import albumPic6 from "../public/images/album/albumPic8_helloKitty.jpg";
-import albumPic9 from "../public/images/album/albumPic9_helloKitty.jpg";
-
 import oilCover from "../public/images/works/1-oil/IMG_4167.jpg";
-import redCover from "../public/images/works/2-red/IMG_1042.jpg";
+import redCover from "../public/images/works/2-red/IMG_4298.jpg";
 import darkCover from "../public/images/works/3-dark/IMG_4265.jpg";
 import metalCover from "../public/images/works/4-metal/IMG_4259.jpg";
 import helloweenCover from "../public/images/works/5-helloween/IMG_4267.jpg";
@@ -64,9 +54,6 @@ export default function Works() {
 
         <WorkGridItem id="no1" thumbnail={helloweenCover} title="万圣节">
           Helloween
-        </WorkGridItem>
-        <WorkGridItem id="no1" thumbnail={hairCover} title="染头发">
-          hair dye
         </WorkGridItem>
       </SimpleGrid>
       <Box align="center" my="50px">
