@@ -11,12 +11,12 @@ import NextLink from "next/link";
 
 import Image from "next/image";
 import { IoLogoTiktok, IoLogoInstagram, IoLogoWechat } from "react-icons/io5";
-import { AiOutlineWeibo, AiOutlineLink } from "react-icons/ai";
-import Parallax from "../components/Parallax";
+import { AiOutlineWeibo } from "react-icons/ai";
 import Layout from "../components/Layout/Layout";
 import { BioSection, BioYear } from "../components/Content/Paragraph/Bio";
 
 import albumPic2 from "../public/images/album/albumPic4_helloKitty.jpg";
+import albumPic10_helloKitty from "../public/images/index/image4.webp";
 
 export default function Contact() {
   return (
@@ -35,7 +35,11 @@ export default function Contact() {
             borderRadius="100%"
             overflow="hidden"
           >
-            <Image src={albumPic2} alt="Profile image" placeholder="blur" />
+            <Image
+              src={albumPic10_helloKitty}
+              alt="Profile image"
+              placeholder="blur"
+            />
           </Box>
         </Box>
 
@@ -47,7 +51,7 @@ export default function Contact() {
         </Box>
       </Box>
 
-      <Heading as="h3" variant="section-title" align="center">
+      <Heading as="h3" variant="section-title" align="center" mt={4}>
         介绍
       </Heading>
 
@@ -68,7 +72,7 @@ export default function Contact() {
         我的化妆师生涯💋
       </BioSection>
 
-      <Heading as="h3" variant="section-title" align="center">
+      <Heading as="h3" variant="section-title" align="center" mt={4}>
         社交平台
       </Heading>
 

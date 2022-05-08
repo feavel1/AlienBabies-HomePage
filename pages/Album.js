@@ -15,12 +15,12 @@ export default function Album() {
       </Heading>
 
       <SimpleGrid columns={[1, 2, 2]} spacing={8}>
-        <WorkGridItem id="no1" thumbnail={albumPic2} title="纪念活动的照片">
-          Memories
+        <WorkGridItem id="no1" thumbnail={albumPic2} title="In progress">
+          Work In Progress
         </WorkGridItem>
 
-        <WorkGridItem id="no1" thumbnail={albumPic2} title="一些照片">
-          some photos
+        <WorkGridItem id="no1" thumbnail={albumPic2} title="In progress">
+          Work In Progress
         </WorkGridItem>
       </SimpleGrid>
       <Box align="center" my={6}>

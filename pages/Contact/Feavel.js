@@ -7,7 +7,7 @@ import albumPic2 from "../../public/images/album/albumPic4_helloKitty.jpg";
 
 export default function Feavel() {
   return (
-    <Layout title="联系">
+    <Layout title="Feavel">
       {/* feavel */}
 
       <Box my={8}>

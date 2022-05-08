@@ -8,7 +8,7 @@ import albumPic2 from "../../public/images/album/albumPic4_helloKitty.jpg";
 
 export default function QiMiao() {
   return (
-    <Layout title="联系">
+    <Layout title="Qi Miao">
       <Box display={{ md: "flex" }}>
         <Box flexGrow={1} mt={{ base: 4, md: 0 }}>
           <Box
