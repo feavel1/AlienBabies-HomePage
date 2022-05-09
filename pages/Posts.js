@@ -18,7 +18,7 @@ export default function Posts() {
         <Parallax speed={-1}>我的火热🔥帖子</Parallax>
         <Parallax speed={-3}>↓</Parallax>
       </Heading>
-      <SimpleGrid columns={[1, 3, 3]} spacing={8} mt="30%">
+      <SimpleGrid columns={[1, 1, 1]} spacing={8} mt="30%">
         <Box mb={4}>
           <GridItem
             href="https://www.douyin.com/video/7073839728801484073?modeFrom=userPost&secUid=MS4wLjABAAAABZed-RkD7nT5SHozVpyjQJmhZFNXQWWXrh6oTn_sX9E"
@@ -38,13 +38,13 @@ export default function Posts() {
           </GridItem>
         </Box>
         <Box mb={4}>
-          <WorkGridItem
+          <GridItem
             href="https://www.douyin.com/video/7007036591206190371?modeFrom=userPost&secUid=MS4wLjABAAAABZed-RkD7nT5SHozVpyjQJmhZFNXQWWXrh6oTn_sX9E"
             thumbnail={PostPic3}
             title="#暗黑系"
           >
             #哥特 #亚文化 又是营业的一天
-          </WorkGridItem>
+          </GridItem>
         </Box>
       </SimpleGrid>
 

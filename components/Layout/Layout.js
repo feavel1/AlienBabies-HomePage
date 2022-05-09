@@ -14,7 +14,7 @@ function Layout(p) {
   return (
     <>
       <Head>
-        <title>Alien Baby - {p.title}</title>
+        <title>{p.title} - Alien Baby</title>
         <meta name="twitter:title" content={p.title} />
         <meta property="og:title" content={p.title} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
