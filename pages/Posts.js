@@ -49,8 +49,8 @@ export default function Posts() {
       </SimpleGrid>
 
       <Box align="center" my="10%">
-        <NextLink href="/Album" passHref scroll={false}>
-          <Button colorScheme="pink">我的相册</Button>
+        <NextLink href="/Contact" passHref scroll={false}>
+          <Button colorScheme="pink">联系我</Button>
         </NextLink>
       </Box>
     </Layout>

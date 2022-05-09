@@ -34,11 +34,11 @@ export default function Works() {
       </Parallax>
 
       <SimpleGrid columns={[1, 2, 2]} spacing={8} mb="30%">
-        <WorkGridItem id="no1" thumbnail={metalCover} title="金属">
+        <WorkGridItem id="Metal" thumbnail={metalCover} title="金属">
           Metal
         </WorkGridItem>
 
-        <WorkGridItem id="no1" thumbnail={helloweenCover} title="万圣节">
+        <WorkGridItem id="Helloween" thumbnail={helloweenCover} title="万圣节">
           Helloween
         </WorkGridItem>
       </SimpleGrid>
@@ -50,7 +50,11 @@ export default function Works() {
       </Parallax>
       <SimpleGrid columns={[1, 1, 1]} spacing={8}>
         <Box mb={4}>
-          <WorkGridItem id="Cute" thumbnail={darkCover} title="专辑封面">
+          <WorkGridItem
+            id="Dark-Birds-Fly"
+            thumbnail={darkCover}
+            title="专辑封面"
+          >
             Album Cover
           </WorkGridItem>
         </Box>

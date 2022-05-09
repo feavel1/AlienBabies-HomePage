@@ -9,6 +9,8 @@ import {
 } from "@chakra-ui/react";
 import NextLink from "next/link";
 
+import Paragraph from "../components/Content/Paragraph/Paragraph";
+
 import Image from "next/image";
 import { IoLogoTiktok, IoLogoInstagram, IoLogoWechat } from "react-icons/io5";
 import { AiOutlineWeibo } from "react-icons/ai";
@@ -22,7 +24,6 @@ export default function Contact() {
   return (
     <Layout title="联系">
       {/* Alien Babies */}
-
       <Box display={{ md: "flex" }}>
         <Box flexGrow={1} mt={{ base: 4, md: 0 }}>
           <Box
@@ -50,32 +51,9 @@ export default function Contact() {
           <p>化妆艺术( 化妆师 / 服装 / 室内设计 )</p>
         </Box>
       </Box>
-
-      <Heading as="h3" variant="section-title" align="center" mt={4}>
-        介绍
-      </Heading>
-
-      <BioSection>
-        <BioYear>2002</BioYear>
-        出生在中国🇨🇳
-      </BioSection>
-      <BioSection>
-        <BioYear>2020</BioYear>
-        高中毕业🎓
-      </BioSection>
-      <BioSection>
-        <BioYear>2021</BioYear>
-        大学里学习: 室内设计 and 化妆
-      </BioSection>
-      <BioSection>
-        <BioYear>2018 - </BioYear>
-        我的化妆师生涯💋
-      </BioSection>
-
-      <Heading as="h3" variant="section-title" align="center" mt={4}>
+      <Heading as="h3" variant="section-title" align="left" my={6}>
         社交平台
       </Heading>
-
       <List textAlign="left" mt={4}>
         <ListItem>
           <Link href="https://v.douyin.com/FRdVhqo/" target="_blank">
@@ -124,25 +102,59 @@ export default function Contact() {
           </Button>
         </ListItem>
       </List>
-
-      <Heading as="h3" variant="section-title" align="center">
-        其他团队成员
+      <Heading as="h3" variant="section-title" textAlign="left" my={6}>
+        自我介绍
       </Heading>
-
-      <SimpleGrid columns={[2, 2, 2]} spacing={8}>
-        <Box align="center" my={6}>
+      <Paragraph>我是一名来自深圳的化妆师,</Paragraph>
+      <Paragraph>为自己的工作负责, </Paragraph>{" "}
+      <Paragraph>帮助有需要的人,</Paragraph>
+      <Paragraph>
+        <NextLink
+          href="https://baike.baidu.com/item/%E9%A9%AC%E5%85%8B%E6%80%9D%E4%B8%BB%E4%B9%89%E5%93%B2%E5%AD%A6/165367?fr=aladdin"
+          passHref
+          scroll={false}
+          variant="text"
+        >
+          <Link color="pink.300" target="_blank">
+            查看原文.
+          </Link>
+        </NextLink>
+      </Paragraph>
+      <Heading as="h3" variant="section-title" align="left" my={6}>
+        介绍
+      </Heading>
+      <BioSection>
+        <BioYear>2002</BioYear>
+        出生在中国🇨🇳
+      </BioSection>
+      <BioSection>
+        <BioYear>2020</BioYear>
+        高中毕业🎓
+      </BioSection>
+      <BioSection>
+        <BioYear>2021</BioYear>
+        大学里学习: 室内设计 and 化妆
+      </BioSection>
+      <BioSection>
+        <BioYear>2018 - </BioYear>
+        我的化妆师生涯💋
+      </BioSection>
+      <Heading as="h3" variant="section-title" align="left" my={6}>
+        团队成员
+      </Heading>
+      <SimpleGrid columns={[1, 2, 2]} spacing={8}>
+        <Box align="left">
           <NextLink href="/Contact/Feavel" passHref scroll={false}>
-            <Button colorScheme="pink">网站设计</Button>
+            <Button colorScheme="pink">Feavel</Button>
           </NextLink>
         </Box>
-        <Box align="center" my={6}>
+        <Box align="left">
           <NextLink href="/Contact/QiMiao" passHref scroll={false}>
-            <Button colorScheme="pink">摄影主编</Button>
+            <Button colorScheme="pink">QiMiao</Button>
           </NextLink>
         </Box>
       </SimpleGrid>
-
-      <Box align="center" my={6}>
+      <Box align="center" my={8}>
         <NextLink href="/" passHref scroll={false}>
           <Button colorScheme="pink">返回到主页</Button>
         </NextLink>
