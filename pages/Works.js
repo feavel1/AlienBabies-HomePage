@@ -3,6 +3,7 @@ import { WorkGridItem } from "../components/Content/Paragraph/GridItem";
 import Layout from "../components/Layout/Layout";
 import Parallax from "../components/Parallax";
 import NextLink from "next/link";
+
 import oilCover from "../public/images/works/1-oil/IMG_4167.jpg";
 import redCover from "../public/images/works/2-red/IMG_4299.jpg";
 import darkCover from "../public/images/works/3-dark/IMG_4265.jpg";
