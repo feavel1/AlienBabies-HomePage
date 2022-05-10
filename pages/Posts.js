@@ -7,7 +7,7 @@ import {
   GridItem,
 } from "../components/Content/Paragraph/GridItem";
 
-import PostPic1 from "../public/images/posts/1-daniil/dan.jpg";
+import PostPic1 from "../public/images/posts/1-daniil/dan2.jpg";
 import PostPic2 from "../public/images/posts/2-cool/IMG_4054.jpg";
 import PostPic3 from "../public/images/posts/3-dark/IMG_4313.jpg";
 

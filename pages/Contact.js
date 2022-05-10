@@ -142,7 +142,7 @@ export default function Contact() {
       <Heading as="h3" variant="section-title" align="left" my={6}>
         团队成员
       </Heading>
-      <SimpleGrid columns={[1, 2, 2]} spacing={8}>
+      <SimpleGrid columns={[1, 1, 1]} spacing={8}>
         <Box align="left">
           <NextLink href="/Contact/Feavel" passHref scroll={false}>
             <Button colorScheme="pink">Feavel</Button>

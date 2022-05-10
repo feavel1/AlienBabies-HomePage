@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import { BiMenuAltRight } from "react-icons/bi";
 import { AiOutlineClose } from "react-icons/ai";
 import Link from "next/link";
-import Btn from "../Btn/Btn";
 import classes from "./Header.module.css";
 import DarkModeSwitch from "../DarkModeSwitch/DarkModeSwitch";
 
@@ -61,11 +60,11 @@ export default function Header() {
                   帖子
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link href="/Album" onClick={menuToggleHandler} scroll={false}>
                   相册
                 </Link>
-              </li>
+              </li> */}
 
               <li>
                 <Link
