@@ -44,7 +44,11 @@ const components = {
 };
 
 const overrides = {
-  ...chakraTheme,
+  // ...chakraTheme,
+  config: {
+    initialColorMode: "dark",
+    useSystemColorMode: true,
+  },
   components,
   styles: {
     global: (props) => ({
@@ -72,10 +76,6 @@ const overrides = {
     "4xl": "36px",
     "5xl": "48px",
     "6xl": "64px",
-  },
-  config: {
-    initialColorMode: "dark",
-    useSystemColorMode: true,
   },
 };
 

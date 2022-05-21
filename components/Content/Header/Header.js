@@ -106,7 +106,7 @@ export default function Header() {
           </div>
         </Box>
       </Box>
-      {/* <div className={classes.blank} /> */}
+      <div className={classes.blank} />
     </>
   );
 }

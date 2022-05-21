@@ -6,8 +6,8 @@ import { Chakra } from "../styles/Chakra";
 function MyApp({ Component, pageProps, router }) {
   return (
     <Chakra cookies={pageProps.cookies}>
-      <ThreeScene />
       <Header />
+      <ThreeScene />
       <AnimatePresence
         exitBeforeEnter
         initial={true}
