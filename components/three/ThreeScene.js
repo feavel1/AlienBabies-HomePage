@@ -1,8 +1,8 @@
 import { Component } from "react";
 import * as THREE from "three";
-import classes from "./ThreeScene.module.css";
 import vertexShader from "./shaders/vertexShader.vert";
 import fragmentShader from "./shaders/fragmentShader.frag";
+import { Box, useColorModeValue } from "@chakra-ui/react";
 
 class ThreeScene extends Component {
   componentDidMount() {
@@ -84,7 +84,16 @@ class ThreeScene extends Component {
   }
 
   render() {
-    return <div id="container1" className={classes.container} />;
+    return (
+      <Box
+        as="div"
+        position="fixed"
+        top={0}
+        zIndex={-100}
+        filter="opacity(0.3)"
+        id="container1"
+      />
+    );
   }
 }
 

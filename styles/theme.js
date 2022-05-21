@@ -73,6 +73,10 @@ const overrides = {
     "5xl": "48px",
     "6xl": "64px",
   },
+  config: {
+    initialColorMode: "dark",
+    useSystemColorMode: true,
+  },
 };
 
 const customTheme = extendTheme(overrides);

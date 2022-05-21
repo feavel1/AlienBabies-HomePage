@@ -4,6 +4,7 @@ import { AiOutlineClose } from "react-icons/ai";
 import Link from "next/link";
 import classes from "./Header.module.css";
 import DarkModeSwitch from "../DarkModeSwitch/DarkModeSwitch";
+import { Box, useColorModeValue } from "@chakra-ui/react";
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -28,7 +29,7 @@ export default function Header() {
     if (size.width > 768 && menuOpen) {
       setMenuOpen(false);
     }
-  }, [size.width, menuOpen]);
+  }, [menuOpen, size.width]);
 
   function menuToggleHandler() {
     setMenuOpen((p) => {
@@ -38,13 +39,28 @@ export default function Header() {
 
   return (
     <>
-      <header className={classes.header}>
-        <div className={classes.header__content}>
+      <Box
+        className={classes.header}
+        bg={useColorModeValue("#F8BBD040", "#880E4F80")}
+        css={{ backdropFilter: "blur(10px)" }}
+        position="fixed"
+        as="nav"
+        w="100%"
+        top={0}
+      >
+        <Box className={classes.header__content}>
           <Link href="/" scroll={false}>
             <a className={classes.header__content__logo}>外星宝贝</a>
           </Link>
 
-          <nav
+          <Box
+            bg={{
+              sm: "#00000000",
+              base: useColorModeValue(
+                "rgba(248, 187, 208, 0.9)",
+                "RGBA(136, 14, 79, 0.95)"
+              ),
+            }}
             className={`${classes.header__content__nav} ${
               menuOpen && size.width < 768 ? classes.isMenu : ""
             }`}
@@ -79,7 +95,7 @@ export default function Header() {
                 <DarkModeSwitch />
               </li>
             </ul>
-          </nav>
+          </Box>
 
           <div className={classes.header__content__toggle}>
             {!menuOpen ? (
@@ -88,9 +104,9 @@ export default function Header() {
               <AiOutlineClose onClick={menuToggleHandler} />
             )}
           </div>
-        </div>
-      </header>
-      <div className={classes.blank} />
+        </Box>
+      </Box>
+      {/* <div className={classes.blank} /> */}
     </>
   );
 }

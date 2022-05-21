@@ -33,7 +33,7 @@ function Layout(p) {
         exit="exit"
         variants={variants}
         transition={{ duration: 0.8, type: "easeInOut" }}
-        style={{ position: "relative" }}
+        style={{ position: "relative", marginTop: "50px" }}
         className={classes.container}
       >
         <Container maxW="lg">

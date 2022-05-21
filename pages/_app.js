@@ -1,20 +1,13 @@
-import { ChakraProvider, ColorModeProvider } from "@chakra-ui/react";
 import { AnimatePresence } from "framer-motion";
-import customTheme from "../styles/theme";
 import Header from "../components/Content/Header/Header";
 import ThreeScene from "../components/three/ThreeScene";
+import { Chakra } from "../styles/Chakra";
 
 function MyApp({ Component, pageProps, router }) {
   return (
-    <ChakraProvider resetCSS theme={customTheme}>
-      <ColorModeProvider
-        options={{
-          useSystemColorMode: true,
-          initialColorMode: "dark",
-        }}
-      />
-      <Header />
+    <Chakra cookies={pageProps.cookies}>
       <ThreeScene />
+      <Header />
       <AnimatePresence
         exitBeforeEnter
         initial={true}
@@ -22,7 +15,7 @@ function MyApp({ Component, pageProps, router }) {
       >
         <Component {...pageProps} key={router.route} />
       </AnimatePresence>
-    </ChakraProvider>
+    </Chakra>
   );
 }
 
