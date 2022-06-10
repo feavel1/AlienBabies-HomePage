@@ -19,7 +19,7 @@ import {
 } from "../components/Content/Paragraph/GridItem";
 import thumbInkdrop from "../public/images/index/image.webp";
 import thumbYouTube from "../public/images/index/image2.webp";
-import albumPic10_helloKitty from "../public/images/index/image4.webp";
+import albumPic10_helloKitty from "../public/apple-touch-icon.jpg";
 
 export default function Home() {
   return (

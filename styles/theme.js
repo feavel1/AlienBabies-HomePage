@@ -1,14 +1,5 @@
-import { theme as chakraTheme } from "@chakra-ui/react";
 import { extendTheme } from "@chakra-ui/react";
 import { createBreakpoints, mode } from "@chakra-ui/theme-tools";
-
-const fonts = {
-  ...chakraTheme.fonts,
-  body: ` -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;`,
-  heading: ` -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;`,
-};
 
 const breakpoints = createBreakpoints({
   sm: "40em",
@@ -44,21 +35,20 @@ const components = {
 };
 
 const overrides = {
-  // ...chakraTheme,
   config: {
-    initialColorMode: "dark",
+    // initialColorMode: "dark",
     useSystemColorMode: true,
   },
   components,
   styles: {
     global: (props) => ({
       body: {
-        bg: mode("#F8BBD0", "#880E4F")(props),
+        bg: mode("#F8BBD0", "#800060")(props),
         color: mode("black", "white")(props),
       },
     }),
   },
-  fonts,
+
   breakpoints,
   fontWeights: {
     normal: 300,
